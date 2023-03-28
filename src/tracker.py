@@ -23,6 +23,8 @@ def start(token):
    ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
     ''')
 
+    console.rule("[bold red]Rich console Initiated[/bold red]", style="bold red", align="left", width=50, characters=("-","")
+
 
 
     @bot.event
