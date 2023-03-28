@@ -50,6 +50,12 @@ def start(token):
         if isinstance(error, commands.CommandNotFound):
             await ctx.send('Invalid command used.')
 
+    # user edits a message
+    @bot.event
+    async def on_message_edit(before, after):
+        console.print(f'{before.author} edited a message\n    [b i gray]{before.content}[/b i gray]\n    [b i ]{after.content}[b i]', style="yellow", justify="left")
+        # send message to log channel
+
     # user deletes a message
     @bot.event
     async def on_message_delete(message):
